@@ -3,6 +3,7 @@ import { commonApi } from '@/store/api/commonApi'
 import rootReducer from '@/store/rootReducer'
 
 export const makeStore = () => {
+  // @ts-ignore
   return configureStore({
     reducer: rootReducer,
     middleware: (getDefaultMiddleware) =>
